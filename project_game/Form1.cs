@@ -297,7 +297,7 @@ namespace project_game
             choose_lev = false;
             pause = false;
             itogi = true;
-            wave_lab.Text = "Всего врагов убито: " + count_kills;
+            wave_lab.Text = "Всего врагов добито: " + count_kills;
             choose_slo();
         }
 
