@@ -393,7 +393,7 @@ namespace project_game
 
             main_menu_bt9.Enabled = itogi;
             main_menu_bt9.Visible = itogi;
-            main_menu_bt9.Location = new Point(lab_itogi.Left, lab_itogi.Top + lab_itogi.Height);
+            main_menu_bt9.Location = new Point(lab_itogi.Left + lab_itogi.Left / 3, lab_itogi.Top + lab_itogi.Height + 5);
 
             hpBar_lb1.Visible = inter;
             hp_bar.Visible = inter;

@@ -357,7 +357,7 @@
             // 
             this.lab_itogi.AutoSize = true;
             this.lab_itogi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lab_itogi.Location = new System.Drawing.Point(170, 92);
+            this.lab_itogi.Location = new System.Drawing.Point(129, 109);
             this.lab_itogi.Name = "lab_itogi";
             this.lab_itogi.Size = new System.Drawing.Size(64, 24);
             this.lab_itogi.TabIndex = 1;
@@ -386,6 +386,7 @@
             this.BackgroundImage = global::project_game.Properties.Resources.white_fone;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(484, 531);
+            this.Controls.Add(this.lab_itogi);
             this.Controls.Add(this.explosion_rocket);
             this.Controls.Add(this.rocket_bar);
             this.Controls.Add(this.hp_bar);
@@ -393,7 +394,6 @@
             this.Controls.Add(this.lab_4_rocketcount);
             this.Controls.Add(this.lab3_bullets_count);
             this.Controls.Add(this.lab2_kills);
-            this.Controls.Add(this.lab_itogi);
             this.Controls.Add(this.wave_lab);
             this.Controls.Add(this.lab4_info);
             this.Controls.Add(this.test_lb2);
