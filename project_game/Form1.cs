@@ -272,7 +272,8 @@ namespace project_game
             choose_slo();
         }
 
-        private void Itogi() {
+        private void Itogi_game()
+        {
             timer1.Stop();
             this.Controls.Remove(HERO.pic);
             foreach (var x in enemies)
@@ -297,7 +298,7 @@ namespace project_game
             choose_lev = false;
             pause = false;
             itogi = true;
-            wave_lab.Text = "Всего врагов добито: " + count_kills;
+            lab_itogi.Text = "Всего врагов добито: " + count_kills;
             choose_slo();
         }
 
@@ -387,7 +388,7 @@ namespace project_game
             main_menu_bt8.Visible = pause;
             main_menu_bt8.Location = new Point(start_bt1.Left, bt7_continue.Top + bt7_continue.Height);
 
-            lab_itogi.Visible = true;
+            lab_itogi.Visible = itogi;
             lab_itogi.Location = wave_lab.Location;
 
             main_menu_bt9.Enabled = itogi;
@@ -555,7 +556,7 @@ namespace project_game
             //}
             if (HERO.hp <= 0)
             {
-                Itogi();
+                Itogi_game();
                 //Reset();
             }
             if (bullets.Count != 0)
